@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-const StatisticalData = ({ title = '', stats }) => (
-  <section class="statistics">
-    <h2 class="title">{title}</h2>
-
-    <ul class="stat-list">
+const StatisticalData = ({ title, stats }) => (
+  <section className="statistics">
+    {title && <h2 className="title">{title}</h2>}
+    <ul className="stat-list">
       {stats.map(stat => (
-        <li class="item" key={stat.id}>
-          <span class="label">{stat.label}</span>
-          <span class="percentage">{stat.percentage}</span>
+        <li className="item" key={stat.id}>
+          <span className="label">{stat.label}</span>
+          <span className="percentage">{stat.percentage}</span>
         </li>
       ))}
     </ul>
