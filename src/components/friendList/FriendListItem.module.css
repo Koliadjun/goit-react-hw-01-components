@@ -1,12 +1,35 @@
 .item {
+  width: 400px;
+  display: flex;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: silver;
 }
 .statusOffline {
+  background-color: red;
 }
 .statusOnline {
+  background-color: seagreen;
 }
 .avatar {
+  width: 70px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px;
 }
 .name {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
