@@ -1,12 +1,26 @@
 .statistics {
+  margin-bottom: 50px;
 }
 .title {
+  font-size: 50px;
+  padding: 25px;
+  background-color: #fff;
 }
 .statList {
+  display: flex;
 }
 .item {
+  width: 25%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 .label {
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 .percentage {
+  font-size: 18px;
+  font-weight: bold;
 }
