@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Profile from './components/profile/Profile';
 import user from './components/profile/user.json';
