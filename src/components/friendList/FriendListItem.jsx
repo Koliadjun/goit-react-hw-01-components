@@ -1,20 +1,22 @@
 import { PropTypes } from 'prop-types';
-const FriendListItem = ({ friend }) => (
-  <li className="item">
-    {friend.isOnline ? (
-      <span className="status status-online"></span>
-    ) : (
-      <span className="status status-offline"></span>
-    )}
-    <img
-      className="avatar"
-      src={friend.avatar}
-      alt="avatar {friend.name}"
-      width="48"
-    />
-    <p className="name">{friend.name}</p>
-  </li>
-);
+import s from '../friendList/FriendListItem.module.css';
+const FriendListItem = ({ friend }) => {
+  let classNames = friend.isOnline
+    ? `${s.status} ${s.statusOnline}`
+    : `${s.status} ${s.statusOffline}`;
+  return (
+    <li className={s.item}>
+      <span className={classNames}></span>
+      <img
+        className={s.avatar}
+        src={friend.avatar}
+        alt="avatar {friend.name}"
+        width="48"
+      />
+      <p className={s.name}>{friend.name}</p>
+    </li>
+  );
+};
 FriendListItem.prototype = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
