@@ -15,6 +15,6 @@ const StatisticalData = ({ title, stats }) => (
 
 StatisticalData.prototype = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.array.isRequired,
 };
 export default StatisticalData;

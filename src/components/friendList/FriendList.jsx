@@ -8,6 +8,6 @@ const FriendList = ({ friends }) => (
   </ul>
 );
 FriendList.prototype = {
-  friends: PropTypes.array,
+  friends: PropTypes.array.isRequired,
 };
 export default FriendList;
