@@ -23,6 +23,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics stats={statisticalData} />
+      <Statistics title={'Uploaded file'} stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;
     </div>
